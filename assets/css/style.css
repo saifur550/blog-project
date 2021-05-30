@@ -116,7 +116,67 @@ ul{
 
 /* ======== Mobile version======== */
 @media(max-width:768px){
+
+
   .navbar__link{
-      display: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
+ 
+
+  .navbar__toggle .bar{
+      background: var(--white);
+      width: 25px;
+      height: 3px;
+      display: block;
+      margin: 5px auto;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+
+  #mobile__menu {
+	position: absolute;
+	top: 15%;
+	right: 5%;
+	transform: translate(5%, 20%);
+   }
+
+
+  #mobile__menu.is__active .two {
+       opacity: 0;
+   }
+
+  #mobile__menu.is__active .one {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #mobile__menu.is__active .three {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar__menu {
+	position: absolute;
+	background: var(--black);
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 100px);
+	top:-1000px;
+ }
+
+
+  .active {
+	background: var(--black);
+    top: 100%;
+    opacity: 1;
+    z-index: 99;
+    height: 100vh;
+    font-size: 1.5rem;
+	
+}
+
+
+
+
+
 }
