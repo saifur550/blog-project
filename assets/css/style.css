@@ -198,6 +198,27 @@ ul{
 /* ========services section======== */
 
 
+/* ========Membership section======== */
+.membership{
+    background: var(--black);
+    color: var(--white);
+    padding: 6rem calc((100vw - 1100px) /2);
+    
+}
+
+.membership h1{
+    margin-bottom: 1rem;
+    font-size:clamp(2rem,5vh,3rem); 
+}
+
+.membership__desc{
+    font-size:clamp(1rem,3vh,1.5rem); 
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+/* ========Membership section======== */
+
+
 
 
 
